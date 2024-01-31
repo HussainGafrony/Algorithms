@@ -16,9 +16,9 @@ function BinarySearch(arr, key) {
     while (low <= high) {
 
         let mid = Math.floor((low + high) / 2);
-        
+
         if (arr[mid] == key) {
-            return mid;
+            return `index : ${mid} `;
         } else if (key > arr[mid]) {
             low = mid + 1;
         } else {
@@ -29,5 +29,5 @@ function BinarySearch(arr, key) {
 
 }
 
-let result = BinarySearch([1, 4, 7, 8, 9, 11, 15, 19, 21], 4);
+let result = BinarySearch([1, 4, 7, 8, 9, 11, 15, 19, 21], 19);
 console.log(result);
